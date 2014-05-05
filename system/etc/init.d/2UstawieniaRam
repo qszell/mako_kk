@@ -1,0 +1,12 @@
+#!/system/bin/sh
+# ADJ Values
+echo "0,1,2,4,10,15" > /sys/module/lowmemorykiller/parameters/adj;
+
+# Minfree Values 
+echo "4753,6315,12884,15203,17770,20150" > /sys/module/lowmemorykiller/parameters/minfree;
+
+# cost Values 
+echo "40" > /sys/module/lowmemorykiller/parameters/cost;
+
+# debug_level 
+echo "2" > /sys/module/lowmemorykiller/parameters/debug_level;
